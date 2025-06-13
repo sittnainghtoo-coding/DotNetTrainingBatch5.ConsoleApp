@@ -41,10 +41,10 @@ namespace DotNetTrainingBatch5.ConsoleApp
                 ([BlogTitle]
                 ,[BlogAuthor]
                 ,[BlogContent],[DeleteFlag])
-    VALUES
+             VALUES
                 (@BlogTitle,@BlogAuthor,@BlogContent,0
 
-)";
+                )";
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
                 int result = db.Execute(query, new BlogDataModel
@@ -54,6 +54,62 @@ namespace DotNetTrainingBatch5.ConsoleApp
                     BlogContent = content
                 });
                 Console.WriteLine(result == 1 ? "Saving Successful" : "Saving Failed");
+            }
+        }
+
+       public void Edit(int id)
+        {
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                string query = @"SELECT * FROM [dbo].[Tbl_Blog] WHERE DeleteFlag = 0 and BlogId = @BlogId";
+                //var lst = db.QueryFirstOrDefault<BlogDataModel>(query, new { BlogId = id });
+                var item = db.Query<BlogDataModel>(query, new BlogDataModel { BlogId = id }).FirstOrDefault();
+                if (item is null)
+                {
+
+                    Console.WriteLine("No Data Found");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine(item.BlogId);
+                    Console.WriteLine(item.BlogTitle);
+                    Console.WriteLine(item.BlogAuthor);
+                    Console.WriteLine(item.BlogContent);
+                }
+            }
+        }
+
+        public void Update(int id, string title, string author, string content)
+        {
+            string query = $@"UPDATE [dbo].[Tbl_Blog]
+   SET [BlogTitle] = @BlogTitle
+      ,[BlogAuthor] = @BlogAuthor
+      ,[BlogContent] = @BlogContent
+      ,[DeleteFlag] = 0
+ WHERE BlogId = @BlogId";
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                int result = db.Execute(query, new BlogDataModel
+                {
+                    BlogId = id,
+                    BlogTitle = title,
+                    BlogAuthor = author,
+                    BlogContent = content
+                });
+                Console.WriteLine(result == 1 ? "Update Successful" : "Update Failed");
+            }
+        
+        }
+
+        public void Delete(int id)
+        {
+            String query = $@"DELETE FROM [dbo].[Tbl_Blog] WHERE BlogId = @BlogId
+";
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                int result = db.Execute(query, new BlogDataModel { BlogId = id });
+                Console.WriteLine(result == 1 ? "Delete Successful" : "Delete Failed");
             }
         }
     }

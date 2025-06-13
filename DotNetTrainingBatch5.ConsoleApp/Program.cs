@@ -13,6 +13,10 @@ using System.Data.SqlClient;
 
 
 DapperExample dapperExample = new DapperExample();
-dapperExample.Read();
-//dapperExample.Create("Chit Tal","KO Sitt","mylove");
+//dapperExample.Read();
+//dapperExample.Edit(1);
+//dapperExample.Edit(10);
+//dapperExample.Create("Chit Tal", "KO Sitt", "mylove");
+//dapperExample.Update(1, "Chit Tal", "KO Sitt", "mylove update");
 
+dapperExample.Delete(15);
