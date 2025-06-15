@@ -15,7 +15,8 @@ namespace DotNetTrainingBatch5.ConsoleApp
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=DotNetTrainingBatch5;User ID=sa;Password=12345;TrustServerCertificate=True");
-             } 
+            }
+
         } 
     
                 public DbSet<BlogDataModel> Blogs { get; set; }
