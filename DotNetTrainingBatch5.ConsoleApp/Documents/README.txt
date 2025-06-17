@@ -26,6 +26,9 @@ efcore database first (manual ,auto) / code first
 efcore database first (manual ,auto) / code first
 
 
+---------------------
+
+
 when you want to database first you have to use scaffold command
 
 dotnet ef dbcontext scaffold "Server=.;Database=DotNetTrainingBatch5;User Id=sa;Password=12345;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c AppDbContext -f
@@ -33,4 +36,13 @@ dotnet ef dbcontext scaffold "Server=.;Database=DotNetTrainingBatch5;User Id=sa;
 			                                                                                                                                                                                     -t mean table you want tbl1,2 3 and then add -t tbl1,tbl2,tbl3 / -f mean by force
 																																																 
 dotnet ef dbcontext scaffold "Server=.;Database=DotNetTrainingBatch5;User Id=sa;Password=12345;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c AppDbContext -t Tbl_Name,Tbal_Author -f
+
+
+----------------------
+
+Request Model
+Response Model
+Dto
+
+we must split resquest model and response model to avoid unnessary request data.
 
