@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTrainingBatch5.ConsoleApp", "DotNetTrainingBatch5.ConsoleApp\DotNetTrainingBatch5.ConsoleApp.csproj", "{9AA5AA06-CF47-4C56-8898-B315BB93393F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetTrainingBatch5.ConsoleApp", "DotNetTrainingBatch5.ConsoleApp\DotNetTrainingBatch5.ConsoleApp.csproj", "{9AA5AA06-CF47-4C56-8898-B315BB93393F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetTrainingBatch5.RestApi", "DotNetTrainingBatch5.RestApi\DotNetTrainingBatch5.RestApi.csproj", "{67076B44-CF55-443B-969C-3EBEA70FABC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTrainingBatch5.Database", "DotNetTrainingBatch5.Database\DotNetTrainingBatch5.Database.csproj", "{84E7409E-7BD4-4504-B787-447426DBE94D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTrainingBatch5.ConsoleApp2", "DotNetTrainingBatch5.ConsoleApp2\DotNetTrainingBatch5.ConsoleApp2.csproj", "{39BD06DA-0DD5-4744-AE0B-BD766D3779D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{9AA5AA06-CF47-4C56-8898-B315BB93393F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AA5AA06-CF47-4C56-8898-B315BB93393F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AA5AA06-CF47-4C56-8898-B315BB93393F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67076B44-CF55-443B-969C-3EBEA70FABC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67076B44-CF55-443B-969C-3EBEA70FABC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67076B44-CF55-443B-969C-3EBEA70FABC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67076B44-CF55-443B-969C-3EBEA70FABC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E7409E-7BD4-4504-B787-447426DBE94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E7409E-7BD4-4504-B787-447426DBE94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E7409E-7BD4-4504-B787-447426DBE94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E7409E-7BD4-4504-B787-447426DBE94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39BD06DA-0DD5-4744-AE0B-BD766D3779D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39BD06DA-0DD5-4744-AE0B-BD766D3779D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39BD06DA-0DD5-4744-AE0B-BD766D3779D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39BD06DA-0DD5-4744-AE0B-BD766D3779D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
