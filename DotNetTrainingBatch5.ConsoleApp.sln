@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetTrainingBatch5.Consol
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetTrainingBatch5.RestApi", "DotNetTrainingBatch5.RestApi\DotNetTrainingBatch5.RestApi.csproj", "{67076B44-CF55-443B-969C-3EBEA70FABC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTrainingBatch5.Database", "DotNetTrainingBatch5.Database\DotNetTrainingBatch5.Database.csproj", "{84E7409E-7BD4-4504-B787-447426DBE94D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetTrainingBatch5.Database", "DotNetTrainingBatch5.Database\DotNetTrainingBatch5.Database.csproj", "{84E7409E-7BD4-4504-B787-447426DBE94D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTrainingBatch5.ConsoleApp2", "DotNetTrainingBatch5.ConsoleApp2\DotNetTrainingBatch5.ConsoleApp2.csproj", "{39BD06DA-0DD5-4744-AE0B-BD766D3779D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetTrainingBatch5.ConsoleApp2", "DotNetTrainingBatch5.ConsoleApp2\DotNetTrainingBatch5.ConsoleApp2.csproj", "{39BD06DA-0DD5-4744-AE0B-BD766D3779D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTrainingBatch5.Shared", "DotNetTrainingBatch5.Shared\DotNetTrainingBatch5.Shared.csproj", "{5F1B0353-4485-4851-90D2-608EE0E84214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{39BD06DA-0DD5-4744-AE0B-BD766D3779D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39BD06DA-0DD5-4744-AE0B-BD766D3779D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39BD06DA-0DD5-4744-AE0B-BD766D3779D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1B0353-4485-4851-90D2-608EE0E84214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1B0353-4485-4851-90D2-608EE0E84214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1B0353-4485-4851-90D2-608EE0E84214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1B0353-4485-4851-90D2-608EE0E84214}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

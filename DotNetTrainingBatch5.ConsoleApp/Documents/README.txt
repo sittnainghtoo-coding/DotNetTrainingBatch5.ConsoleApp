@@ -35,7 +35,7 @@ dotnet ef dbcontext scaffold "Server=.;Database=DotNetTrainingBatch5;User Id=sa;
 
 			                                                                                                                                                                                     -t mean table you want tbl1,2 3 and then add -t tbl1,tbl2,tbl3 / -f mean by force
 																																																 
-dotnet ef dbcontext scaffold "Server=.;Database=DotNetTrainingBatch5;User Id=sa;Password=12345;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c AppDbContext -t Tbl_Name,Tbal_Author -f
+dotnet ef dbcontext scaffold "Server=.;Database=DotNetTrainingBatch5;User Id=sa;Password=12345;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c AppDbContext -t Tbl_TodoList -f
 
 
 ----------------------
@@ -47,4 +47,10 @@ Dto
 we must split resquest model and response model to avoid unnessary request data.
 
 ---------------------
+
+
+ado.net /dapper => custom service
+-----------------------------------
+
+
 

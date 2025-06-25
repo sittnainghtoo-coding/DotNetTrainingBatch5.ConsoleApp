@@ -13,8 +13,10 @@ namespace DotNetTrainingBatch5.RestApi.Controllers
         [HttpGet]
         public IActionResult GetBlogs()
         {
-            var lst = _db.TblBlogs.AsNoTracking().Where(x=>x.DeleteFlag == false).ToList();
+            var lst = _db.TblBlogs.AsNoTracking().Where(x => x.DeleteFlag == false).ToList();
             return Ok(lst);
+
+
         }
 
         [HttpGet("{id}")]
